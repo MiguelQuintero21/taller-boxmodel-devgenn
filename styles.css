@@ -1,3 +1,5 @@
+
+
 /* Configuración general y reseteo básico */
 * {
     box-sizing: border-box;
@@ -11,7 +13,7 @@ body {
     color: #333;
 }
 
-/* Misión 3: Centrar la credencial utilizando Flexbox */
+/* Misión 3:*/
 .credencial-container {
     display: flex;
     justify-content: center;
@@ -19,7 +21,7 @@ body {
     min-height: 100vh;
 }
 
-/* Misión 2: Estilos de la tarjeta (Box Model) */
+/* Misión 2: Estilos de la tarjeta y Misión 5 pocision  */
 .credencial-tarjeta {
     width: 350px;
     background-color: #ffffff;
@@ -27,8 +29,6 @@ body {
     border-radius: 12px;
     padding: 24px;
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    
-    /* Importante para la Misión 5 (Position absoluta de la insignia) */
     position: relative; 
 }
 
@@ -45,104 +45,7 @@ body {
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid #0284c7;
-}
-
-.avatar {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.credencial-header h1 {
-    font-size: 1.25rem;
-    color: #1e293b;
-}
-
-.rol {
-    font-size: 0.9rem;
-    color: #0284c7;
-    font-weight: bold;
-    margin-top: 4px;
-}
-
-/* Estilos de la sección de información */
-.credencial-info {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    font-size: 0.9rem;
-    border-top: 1px solid #e2e8f0;
-    border-bottom: 1px solid #e2e8f0;
-    padding: 16px 0;
-    margin-bottom: 16px;
-}
-
-.credencial-info i {
-    width: 20px;
-    color: #0284c7;
-}
-
-.frase {
-    font-style: italic;
-    color: #64748b;
-    font-size: 0.85rem;
-    text-align: center;
-    margin-top: 6px;
-}
-
-/* Pie de página de la credencial */
-.credencial-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.75rem;
-    color: #94a3b8;
-}/* Configuración general y reseteo básico */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #333;
-}
-
-/* Misión 3: Centrar la credencial utilizando Flexbox */
-.credencial-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* Misión 2: Estilos de la tarjeta (Box Model) */
-.credencial-tarjeta {
-    width: 350px;
-    background-color: #ffffff;
-    border: 2px solid #cbd5e1;
-    border-radius: 12px;
-    padding: 24px;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-    
-    /* Importante para la Misión 5 (Position absoluta de la insignia) */
-    position: relative; 
-}
-
-/* Estilos del encabezado */
-.credencial-header {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.avatar-container {
-    width: 100px;
-    height: 100px;
-    margin: 0 auto 12px auto;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 3px solid #0284c7;
+    position: relative; /* Necesario para la etiqueta online */
 }
 
 .avatar {
@@ -196,7 +99,7 @@ body {
     color: #94a3b8;
 }
 
-
+/* Misión 5: */
 .insignia {
     position: absolute;
     top: 12px;
@@ -211,11 +114,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-/* Desafío Final: Etiqueta ONLINE sobre el avatar usando pseudoelemento */
-.avatar-container {
-    position: relative; /* Para posicionar el pseudoelemento dentro de la foto */
-}
-
+/* Desafío Final: Etiquetar online sobre la foto */
 .avatar-container::after {
     content: "ONLINE";
     position: absolute;
